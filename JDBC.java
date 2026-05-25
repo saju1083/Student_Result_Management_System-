@@ -36,7 +36,8 @@ public class JDBC{
 
             displayRecords();
 
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             System.out.println("Error in Input: " + e.getMessage());
         }
     }
@@ -58,9 +59,10 @@ public class JDBC{
             pstmt.setInt(3, total);
             pstmt.setString(4, grade);
             pstmt.executeUpdate();
-            System.out.println("\n✅ Data inserted into database successfully!");
-        } catch (SQLException e) {
-            System.out.println("❌ Database Error: " + e.getMessage());
+            System.out.println("\n Data inserted into database successfully!");
+        } 
+            catch (SQLException e) {
+            System.out.println("Database Error: " + e.getMessage());
         }
     }
 
@@ -75,8 +77,9 @@ public class JDBC{
                                    " | Total: " + rs.getInt("total") + 
                                    " | Grade: " + rs.getString("grade"));
             }
-        } catch (SQLException e) {
-            System.out.println("❌ Error fetching data: " + e.getMessage());
+        } 
+            catch (SQLException e) {
+            System.out.println("Error fetching data: " + e.getMessage());
         }
     }
 }
