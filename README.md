@@ -1,4 +1,6 @@
-# **Student Result Management System**
+# Student Result Management System
+## Project Overview
+This project takes student data as input and stores it in a MySQL database using JDBC.
 ## Screenshot
 ### 1. Scource Code
 
